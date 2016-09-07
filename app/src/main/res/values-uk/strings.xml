@@ -1,0 +1,41 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<resources>
+  <string name="app_name">Traccar Менеджер</string>
+  <string name="app_login">Вхід</string>
+  <string name="shared_second">Секунда</string>
+  <string name="shared_minute">Хвилина</string>
+  <string name="shared_hour">Година</string>
+  <string name="error_connection">Помилка з\'єднання</string>
+  <string name="error_general">Помилка запиту сервера</string>
+  <string name="error_invalid_url">Невірний URL сервера</string>
+  <string name="error_invalid_frequency">Частота повинна бути допустимим числом</string>
+  <string name="devices_title">Пристрої</string>
+  <string name="send_command_title">Відправити команду</string>
+  <string name="settings_title">Налаштування</string>
+  <string name="logout_title">Вихід</string>
+  <string name="settings_url">Сервер</string>
+  <string name="settings_email">Email</string>
+  <string name="settings_password">Пароль</string>
+  <string name="user_kn">Вузли</string>
+  <string name="user_kmh">км/г</string>
+  <string name="user_mph">Милі</string>
+  <string name="position_time">Час</string>
+  <string name="position_latitude">Широта</string>
+  <string name="position_longitude">Довгота</string>
+  <string name="position_speed">Швидкість</string>
+  <string name="position_altitude">Висота</string>
+  <string name="position_course">Курс</string>
+  <string name="action_show_on_map">Показати на мапі</string>
+  <string name="action_send_command">Відправити команду</string>
+  <string name="command_command">Команда</string>
+  <string name="command_frequency_frequency">Частота</string>
+  <string name="command_frequency_unit">Одиниці</string>
+  <string name="command_send">Відправити</string>
+  <string name="command_sent">Команда була відправлена</string>
+  <string name="command_alarm_arm">Розблокування</string>
+  <string name="command_alarm_disarm">Блокування</string>
+  <string name="command_engine_stop">Зупинка двигуна</string>
+  <string name="command_engine_resume">Резюме двигуна</string>
+  <string name="command_position_periodic">Періодична звітність</string>
+  <string name="command_frequency">Частота</string>
+</resources>
