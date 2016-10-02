@@ -46,6 +46,7 @@ public class MainActivity extends PreferenceActivity implements OnSharedPreferen
     public static final String KEY_DEVICE = "id";
     public static final String KEY_ADDRESS = "address";
     public static final String KEY_PORT = "port";
+    public static final String KEY_PATH = "path";
     public static final String KEY_SECURE = "secure";
     public static final String KEY_INTERVAL = "interval";
     public static final String KEY_PROVIDER = "provider";
@@ -84,6 +85,12 @@ public class MainActivity extends PreferenceActivity implements OnSharedPreferen
                 } else {
                     return newValue != null && !((String) newValue).isEmpty();
                 }
+            }
+        });
+        findPreference(KEY_PATH).setOnPreferenceChangeListener(new Preference.OnPreferenceChangeListener() {
+            @Override
+            public boolean onPreferenceChange(Preference preference, Object newValue) {
+                return newValue != null && !((String) newValue).isEmpty();
             }
         });
         findPreference(KEY_PORT).setOnPreferenceChangeListener(new Preference.OnPreferenceChangeListener() {
@@ -176,6 +183,7 @@ public class MainActivity extends PreferenceActivity implements OnSharedPreferen
         findPreference(KEY_DEVICE).setEnabled(enabled);
         findPreference(KEY_ADDRESS).setEnabled(enabled);
         findPreference(KEY_PORT).setEnabled(enabled);
+        findPreference(KEY_PATH).setEnabled(enabled);
         findPreference(KEY_SECURE).setEnabled(enabled);
         findPreference(KEY_INTERVAL).setEnabled(enabled);
         findPreference(KEY_PROVIDER).setEnabled(enabled);

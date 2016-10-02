@@ -19,11 +19,14 @@ import android.net.Uri;
 
 public class ProtocolFormatter {
 
-    public static String formatRequest(String address, int port, boolean secure, Position position) {
+    public static String formatRequest(String address, String path, int port, boolean secure, Position position) {
 
         Uri.Builder builder = new Uri.Builder();
-        builder.scheme(secure ? "https" : "http").encodedAuthority(address + ':' + port)
-                .appendQueryParameter("id", position.getDeviceId())
+        builder.scheme(secure ? "https" : "http").encodedAuthority(address + ':' + port);
+        if(path != null) {
+            builder.appendPath(path);
+        }
+        builder.appendQueryParameter("id", position.getDeviceId())
                 .appendQueryParameter("timestamp", String.valueOf(position.getTime().getTime() / 1000))
                 .appendQueryParameter("lat", String.valueOf(position.getLatitude()))
                 .appendQueryParameter("lon", String.valueOf(position.getLongitude()))
