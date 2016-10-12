@@ -33,7 +33,8 @@ public class ProtocolFormatter {
                 .appendQueryParameter("speed", String.valueOf(position.getSpeed()))
                 .appendQueryParameter("bearing", String.valueOf(position.getCourse()))
                 .appendQueryParameter("altitude", String.valueOf(position.getAltitude()))
-                .appendQueryParameter("batt", String.valueOf(position.getBattery()));
+                .appendQueryParameter("batt", String.valueOf(position.getBattery()))
+                .appendQueryParameter("accuracy", String.valueOf(position.getAccuracy()));
 
         return builder.build().toString();
     }
